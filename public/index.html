@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Authentication Test</title>
+		<script src="https://code.angularjs.org/1.3.9/angular.min.js"></script>
+		<script src="TestModule.js"></script>
+		<script src="TestController.js"></script>
+	</head>
+	<body ng-app="TestModule">
+		<h1>Hello :D</h1>
+		<div ng-controller="TestController">
+			<form action="/authenticate" method="POST">
+				<input type="text" name="email" />
+				<input type="password" name="pass" />
+				<input type="submit" value="Login" />
+			</form>
+		</div>
+	</body>
+</html>
